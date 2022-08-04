@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 ::-webkit-scrollbar{
@@ -46,6 +47,8 @@ body{
 .container{
   width: var(--container-width-lg);
   margin:0 auto;
+  overflow: hidden;
+  
 }
 
 h1,h2,h3,h4,h5{
@@ -59,7 +62,6 @@ h1{
 
 section {
   margin-top: 8rem;
-  height:100vh;
 }
 
 section > h2,
@@ -120,6 +122,8 @@ img{
 @media screen and (max-width: 1024px) {
   .container{
     width: var(--container-width-md);
+    overflow: hidden;
+    
   }
   section{
     margin-top: 6rem;
