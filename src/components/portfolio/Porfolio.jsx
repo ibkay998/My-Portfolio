@@ -17,7 +17,7 @@ const Portfolio = () => {
           <h3>STREETRATES</h3>
           <div className='portfolio__item-cta'>
             <a href="https://github.com/workshopapps/realxchangerate.web" target="_blank" rel='noreferrer' className='btn ' >Github</a>
-            <a href="https://streetrates.hng.tech/" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
+            <a href="https://streetrates.info/" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
           </div>
             
         </article>
@@ -27,8 +27,8 @@ const Portfolio = () => {
           </div>
             <h3>MUSICA</h3>
             <div className='portfolio__item-cta'>
-              <a href="https://ibkay-musica.vercel.app" target="_blank" rel='noreferrer' className='btn '>Github</a>
-              <a href="https://github.com/ibkay998/Musica" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
+              <a href="https://github.com/ibkay998/Musica" target="_blank" rel='noreferrer' className='btn '>Github</a>
+              <a href="https://ibkay-musica.vercel.app" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
             </div>
         </article>
         <article className="portfolio__item">
