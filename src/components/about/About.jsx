@@ -43,7 +43,7 @@ const About = () => {
 
           <p>
             Hey My name is Ibukunoluwa Oyeniyi and I am a graduate of the University of Lagos. 
-            I love all things Programing and have a soft spot for python. I love Algorithms and you can check out my leetcode profile here <a href="https://leetcode/ibkay-998">Leetcode Profile</a>
+            I love all things Programing and have a soft spot for python. I love Algorithms and you can check out my leetcode profile here <a href="https://leetcode.com/ibkay998">Leetcode Profile</a>
           </p>
 
           <a href="#contact" className='btn btn-primary'>Lets Talk</a>
