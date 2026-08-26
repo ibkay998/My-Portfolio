@@ -1,49 +1,57 @@
 import React from 'react'
-import "./portfolio.css"
-import PORTFOLIO1 from "../../assets/portfolio1.jpg"
-import PORTFOLIO2 from "../../assets/portfolio2.jpg"
-import PORTFOLIO3 from "../../assets/portfolio3.jpg"
+import { FiArrowUpRight } from 'react-icons/fi'
+import { products } from '../../data/portfolio'
 
-const Portfolio = () => {
-  return (
-    <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
-      <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={PORTFOLIO1} alt="portfolio1"  height="250px"/>
-          </div>
-          <h3>STREETRATES</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/workshopapps/realxchangerate.web" target="_blank" rel='noreferrer' className='btn ' >Github</a>
-            <a href="https://streetrates.info/" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
-          </div>
-            
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={PORTFOLIO2} alt="portfolio2" height="250px" />
-          </div>
-            <h3>MUSICA</h3>
-            <div className='portfolio__item-cta'>
-              <a href="https://github.com/ibkay998/Musica" target="_blank" rel='noreferrer' className='btn '>Github</a>
-              <a href="https://ibkay-musica.vercel.app" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
-            </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={PORTFOLIO3} alt="portfolio1" height="250px"/>
-          </div>
-            <h3>TUTERIA</h3>
-            <div className='portfolio__item-cta'>
-              <a href="#" rel='noreferrer' className='btn '>Github</a>
-              <a href="https://tuteria.com/" target="_blank" rel='noreferrer' className='btn btn-primary'>Live Demo</a>
-            </div>
-        </article>
+const ProductVisual = ({ product }) => (
+  <div className={`product-visual product-visual-${product.visual}`} aria-hidden="true">
+    <span className="product-visual-index">{product.number}</span>
+    <span className="product-visual-mark">{product.mark}</span>
+    <div className="device-shell">
+      <div className="device-top" />
+      <div className="device-screen">
+        <span className="screen-kicker">{product.name}</span>
+        <strong>{product.kicker}</strong>
+        <div className="screen-lines"><i /><i /><i /></div>
       </div>
-    </section>
-  )
-}
+    </div>
+    <span className="visual-word">{product.name}</span>
+  </div>
+)
+
+const Portfolio = () => (
+  <section className="products-section" id="products" aria-labelledby="products-title">
+    <div className="section-shell">
+      <div className="section-heading products-heading">
+        <p className="eyebrow">Products I&apos;ve built</p>
+        <h2 id="products-title">Ideas, carried all the way to product.</h2>
+        <p>Four very different products. One consistent approach: understand the real problem, make the experience clear, and engineer it to last.</p>
+      </div>
+      <div className="product-list">
+        {products.map((product) => (
+          <article className="product-case" key={product.name}>
+            <ProductVisual product={product} />
+            <div className="product-copy">
+              <div className="product-meta">
+                <span>{product.number}</span>
+                <span>{product.role}</span>
+              </div>
+              <h3>{product.name}</h3>
+              <p className="product-kicker">{product.kicker}</p>
+              <p className="product-description">{product.description}</p>
+              <div className="tag-list">
+                {product.stack.map((item) => <span key={item}>{item}</span>)}
+              </div>
+              {product.link && (
+                <a className="product-live-link" href={product.link} target="_blank" rel="noreferrer">
+                  Visit {product.name} <FiArrowUpRight aria-hidden="true" />
+                </a>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)
 
 export default Portfolio

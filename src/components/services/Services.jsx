@@ -1,73 +1,32 @@
 import React from 'react'
-import "./services.css"
-import {BiCheck} from "react-icons/bi"
+import { capabilities } from '../../data/portfolio'
 
-const Services = () => {
-  return (
-    <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
-      <div className="container services__container">
-        <article className="service">
-          <div className="service_head">
-            <h3>UI/UX Design</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
-        <article className="service">
-          <div className="service_head">
-            <h3>UI/UX Design</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
-        <article className="service">
-          <div className="service_head">
-            <h3>UI/UX Design</h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li>
-              {BiCheck}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
+const Services = () => (
+  <section className="capabilities-section" id="about" aria-labelledby="capabilities-title">
+    <div className="section-shell capabilities-grid">
+      <div className="section-heading capabilities-heading">
+        <p className="eyebrow">How I work</p>
+        <h2 id="capabilities-title">Wide technical range.<br />One product mindset.</h2>
+        <p>
+          I work comfortably from interface details to service boundaries, data models, release pipelines, and evaluation harnesses. The goal is always the same: useful software that holds up in the real world.
+        </p>
       </div>
-    </section>
-  )
-}
+      <div className="capability-list">
+        {capabilities.map((capability, index) => (
+          <article className="capability" key={capability.title}>
+            <span className="capability-number">0{index + 1}</span>
+            <div>
+              <h3>{capability.title}</h3>
+              <p>{capability.description}</p>
+              <div className="capability-items">
+                {capability.items.map((item) => <span key={item}>{item}</span>)}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)
 
 export default Services

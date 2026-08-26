@@ -1,62 +1,23 @@
 import React from 'react'
-import "./contact.css"
-import {MdOutlineEmail} from "react-icons/md"
-import {RiMessengerLine} from "react-icons/ri"
-import {BsWhatsapp} from "react-icons/bs"
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { socialLinks } from '../../data/portfolio'
 
-
-const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_wqbn3i6', 'template_hygtbh6', form.current, 'pdD1yTW06PjxanqnU')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
-  };
-
-  return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className='contact__option'>
-            <MdOutlineEmail className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h5>ibukun46@gmail.com</h5>
-            <a href="mailto:ibukun46@gmail.com " target="__blank"> Send A Message</a>
-          </article>
-          <article className='contact__option'>
-            <RiMessengerLine className='contact__option-icon'/>
-            <h4>Messanger</h4>
-            <h5>Ibukunoluwa Oyeniyi</h5>
-            <a href="https://m.me/ibukunoluwa.oyeniyi" target="__blank"> Send A Message</a>
-          </article>
-          <article className='contact__option'>
-            <BsWhatsapp className='contact__option-icon'/>
-            <h4>Whatsapp</h4>
-            <h5>+234 8155719133</h5>
-            <a href="https://api.whatsapp.com/send?phone=2348155719133" target="__blank"> Send A Message</a>
-          </article>
-        </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message"  rows="7" placeholder='Your Message' required></textarea>
-          <button type="submit" className='btn btn-primary'>Send Message</button>
-        </form>
+const Contact = () => (
+  <section className="contact-section" id="contact" aria-labelledby="contact-title">
+    <div className="contact-orbit" aria-hidden="true" />
+    <div className="section-shell contact-inner">
+      <p className="eyebrow">Start a conversation</p>
+      <h2 id="contact-title">Have a hard problem<br />worth building around?</h2>
+      <a className="contact-email" href={socialLinks.email}>
+        ibukun46@gmail.com <FiArrowUpRight aria-hidden="true" />
+      </a>
+      <div className="contact-links">
+        <a href={socialLinks.linkedin} target="_blank" rel="noreferrer">LinkedIn <FiArrowUpRight aria-hidden="true" /></a>
+        <a href={socialLinks.github} target="_blank" rel="noreferrer">GitHub <FiArrowUpRight aria-hidden="true" /></a>
+        <a href={socialLinks.leetcode} target="_blank" rel="noreferrer">LeetCode <FiArrowUpRight aria-hidden="true" /></a>
       </div>
-      
-    </section>
-  )
-}
+    </div>
+  </section>
+)
 
 export default Contact
