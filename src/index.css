@@ -220,6 +220,7 @@ img { display: block; max-width: 100%; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 24px; }
   .portrait-frame { height: 470px; width: 92%; }
   .portrait-orbit { height: 320px; left: 10px; width: 320px; }
+  .portrait-note-bottom { bottom: 0; left: 50%; transform: translateX(-50%); white-space: nowrap; writing-mode: horizontal-tb; }
   .hero-index { display: none; }
   .section-heading h2 { font-size: clamp(2.85rem,14vw,4.3rem); }
   .impact-band, .experience-section, .products-section, .capabilities-section { padding: 96px 0; }
