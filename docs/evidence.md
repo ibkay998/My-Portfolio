@@ -12,6 +12,8 @@ LeetCode daily granularity: src/data/leetcode-2022.json is the raw public submis
 - Every number on the site must come from this file. Do not invent metrics.
 
 ## Identity
+- Self-described role (owner, 2026-11-07): full-stack engineer across backend, frontend, mobile, DevOps and AI evaluation.
+  DevOps evidence: GCP, AWS, Docker, GitHub Actions (CV).
 - Ibukunoluwa Oyeniyi, Lagos, Nigeria. ibukun46@gmail.com
 - LinkedIn https://www.linkedin.com/in/ibukunoluwa-oyeniyi-86b202159/ (725 followers, 500+ connections)
 - GitHub https://github.com/ibkay998 · LeetCode https://leetcode.com/ibkay998

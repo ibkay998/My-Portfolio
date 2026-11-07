@@ -7,18 +7,18 @@ const display = DM_Serif_Display({ subsets: ['latin'], weight: '400', style: ['n
 const body = Manrope({ subsets: ['latin'], variable: '--font-body' })
 
 const description =
-  'Full-stack, mobile and AI engineer in Lagos. Developer of the Year at Babban Gona, AI evaluation expert at AfterQuery, founder of Master Anything.'
+  'Full-stack engineer in Lagos: backend, frontend, mobile, DevOps and AI evaluation. Developer of the Year at Babban Gona, AI evaluation expert at AfterQuery, founder of Master Anything.'
 
 const ogAlt =
   'Ibukunoluwa Oyeniyi: I make software prove itself. 13.7 s to 45.5 ms median latency on a controlled 20,000-record benchmark, 0 rejections in an AI-evaluation review cycle, Developer of the Year.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://myportforlio.vercel.app'),
-  title: 'Ibukunoluwa Oyeniyi · Full-stack, mobile & AI engineer',
+  title: 'Ibukunoluwa Oyeniyi · Full-stack engineer',
   description,
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Ibukunoluwa Oyeniyi · Full-stack, mobile & AI engineer',
+    title: 'Ibukunoluwa Oyeniyi · Full-stack engineer',
     description,
     url: '/',
     type: 'profile',
@@ -33,7 +33,7 @@ const person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Ibukunoluwa Oyeniyi',
-  jobTitle: 'Developer II, Frontend Lead',
+  jobTitle: 'Full-stack engineer (backend, frontend, mobile, DevOps, AI evaluation)',
   worksFor: [
     { '@type': 'Organization', name: 'Babban Gona' },
     { '@type': 'Organization', name: 'AfterQuery Experts' },
@@ -48,7 +48,7 @@ const person = {
   knowsAbout: [
     'TypeScript', 'React', 'Next.js', 'React Native', 'Expo', 'Python', 'Node.js', 'NestJS', 'PostgreSQL', 'MongoDB',
     'Redis', 'GraphQL', 'Rust', 'Java', 'GCP', 'AWS', 'Docker', 'Playwright', 'AI agent evaluation', 'Benchmark design',
-    'Sanitizer-backed fuzzing', 'LLM product engineering',
+    'Sanitizer-backed fuzzing', 'LLM product engineering', 'SQLite', 'Convex', 'GitHub Actions', 'SonarQube',
   ],
 }
 

@@ -1,6 +1,6 @@
 # Ibukunoluwa Oyeniyi
 
-> Full-stack, mobile and AI engineer in Lagos, Nigeria. Developer II and frontend lead at Babban Gona (Developer of the Year), Software Engineering & AI Evaluation Expert at AfterQuery, founder of Master Anything. Email: ibukun46@gmail.com
+> Full-stack engineer in Lagos, Nigeria, working across backend, frontend, mobile, DevOps and AI evaluation. Developer II and frontend lead at Babban Gona (Developer of the Year), Software Engineering & AI Evaluation Expert at AfterQuery, founder of Master Anything. Email: ibukun46@gmail.com
 
 Claims below are drawn from a public evidence file:
 https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
@@ -14,6 +14,7 @@ https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 - Performance: cut median request latency in Program Config Service from 13.7 s to 45.5 ms (about 300x) on a controlled 20,000-record benchmark, through pagination and query/index optimization with backend engineers.
 - Delivery: designed and shipped an export service in under one week: frontend integration, PostgreSQL-backed async jobs, recoverable workers, streamed CSV, tenant-scoped permissions, private downloads.
 - Quality: ESLint warning backlog 79 to 0; changed-line quality gates; coverage-artifact validation.
+- Cross-service: backend and cross-service work across Config, Entity, Workflow, Inventory and IAM services; resolves identity, permission and assignment failures across API gateways, persistence and mobile sync.
 - Data: Odoo integrations synchronizing tens of millions of records. 20+ projects and workstreams delivered.
 - AI evaluation, AfterQuery Project Gold: 14 repository tasks authored; 3 approved and 11 advanced to human review; 0 rejections in the cycle.
 - AI evaluation, Project Pluto: 18 terminal-agent task packages advanced to Ready for Review (Python, Rust, Java), with deterministic integration suites, oracle/no-op separation and multi-model difficulty calibration.

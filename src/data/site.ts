@@ -16,13 +16,13 @@ export const links = {
 export const heroProofs = [
   {
     href: '#latency',
-    value: '13.7 s → 45.5 ms',
+    value: '13.7\u00a0s → 45.5\u00a0ms',
     label: 'Median latency after a query fix · controlled 20,000-record benchmark',
   },
   {
     href: '#afterquery',
-    value: '0 rejections in one cycle',
-    label: 'AfterQuery Project Gold: 14 tasks, 3 approved, 11 in human review',
+    value: '0 rejections',
+    label: 'One AfterQuery Project Gold cycle: 14 tasks, 3 approved, 11 in human review',
   },
   {
     href: '#career',
@@ -109,7 +109,7 @@ export const aiPractice = [
   {
     kicker: 'In product',
     title: 'I build an AI product',
-    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. I built it end to end as founder and product engineer.',
+    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. I’m its founder and product engineer.',
     href: 'https://masteranything.app',
     cta: 'Visit masteranything.app',
   },
@@ -232,5 +232,6 @@ export const council = {
     { label: 'R0 · old site', scores: ['6.30', null, null] },
     { label: 'R1 · first rebuild', scores: ['7.40', '7.90', '7.98'] },
     { label: 'R2', scores: ['8.23', '8.63', '8.53'] },
+    { label: 'R3 · zero-JS static build', scores: ['8.60', '9.05', '8.75'] },
   ] as { label: string; scores: (string | null)[] }[],
 }

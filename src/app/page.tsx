@@ -43,15 +43,15 @@ export default function Home() {
         <section id="top" className="hero shell">
           <div className="hero__copy">
             <p className="eyebrow">
-              Developer II &amp; frontend lead, Babban Gona<span className="eyebrow__long"> · AI evaluation expert, AfterQuery</span> · Lagos
+              Full-stack engineer · backend, frontend, mobile, DevOps &amp; AI evaluation · Lagos
             </p>
             <h1>
               I make software <em>prove</em> itself.
             </h1>
             <p className="hero__intro">
-              I’m Ibukunoluwa Oyeniyi, a civil engineer turned software engineer. I lead frontend for an agricultural
-              operations platform used by 10,000+ people across Nigeria, build AI and mobile products, and get
-              paid to design tasks that test what frontier coding agents can really do.
+              I’m Ibukunoluwa Oyeniyi. As Developer II at Babban Gona I lead frontend for a platform used by 10,000+
+              people across Nigeria. I also build AI and mobile products, and design coding-agent evaluations for
+              AfterQuery.
             </p>
             <ul className="proofs">
               {heroProofs.map((p) => (
@@ -88,7 +88,8 @@ export default function Home() {
             <h2 id="evidence-title">Selected work, with the evidence behind it.</h2>
             <p className="section__lede">
               I can’t show screenshots of my employer’s product, so this section shows the numbers, how the systems
-              fit together, and where each claim comes from.
+              fit together, and where each claim comes from. Stack: React, Next.js, TypeScript, React Query, Python,
+              PostgreSQL and GCP.
             </p>
           </div>
 
@@ -111,7 +112,6 @@ export default function Home() {
               <p className="kicker">Babban Gona · Export service</p>
               <h3>Designed and shipped a full export service in under a week.</h3>
               <dl className="case">
-                <div><dt>Constraint</dt><dd>Designed and delivered in under one week.</dd></div>
                 <div><dt>Scope</dt><dd>End to end, from frontend integration to private downloads, as shown.</dd></div>
                 <div><dt>Safety</dt><dd>Tenant-scoped permissions and private downloads.</dd></div>
               </dl>
@@ -257,8 +257,8 @@ export default function Home() {
             {products.map((p) => (
               <article key={p.name} className={p.image ? 'product product--visual' : 'product'}>
                 {p.image && (
-                  <a href={p.href} className="product__shot" tabIndex={-1} aria-hidden="true">
-                    <Image src={p.image.src} alt="" width={p.image.width} height={p.image.height} sizes="(max-width: 900px) 100vw, 640px" />
+                  <a href={p.href} className="product__shot">
+                    <Image src={p.image.src} alt={p.image.alt} width={p.image.width} height={p.image.height} sizes="(max-width: 900px) 100vw, 640px" />
                   </a>
                 )}
                 {p.image && <p className="product__note">Screenshot of the public site, November 2026</p>}
@@ -317,7 +317,7 @@ export default function Home() {
                 <div className="lc-topics">
                   <dt>Most practised</dt>
                   <dd>
-                    <ul>
+                    <ul className="lc-topics__list">
                       {leetcode.topics.map(([t, n]) => (
                         <li key={t}><span>{t}</span><span>{n}</span></li>
                       ))}
