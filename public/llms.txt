@@ -32,7 +32,7 @@ https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 TypeScript, Python, React, Next.js, React Native, Expo, Node.js, NestJS, PostgreSQL, MongoDB, Redis, SQLite, GraphQL, REST, Convex, Rust, Java, GCP, AWS, Docker, GitHub Actions, Playwright, SonarQube, LLM integration, AI agent evaluation, benchmark design, fuzzing and sanitizers.
 
 ## Background
-B.Sc. Civil Engineering, University of Lagos (2022). Civil Engineer at Torek Engineering (2022) before moving into software full time in 2023.
+B.Sc. Civil Engineering, University of Lagos (2015–2021). Civil Engineer at Torek Engineering (2022) before moving into software full time in 2023.
 
 ## Links
 - CV: https://ibukunoluwa-oyeniyi.vercel.app/Ibukunoluwa-Oyeniyi-CV.pdf

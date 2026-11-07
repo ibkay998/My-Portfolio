@@ -17,7 +17,7 @@ LeetCode daily granularity: src/data/leetcode-2022.json is the raw public submis
 - Ibukunoluwa Oyeniyi, Lagos, Nigeria. ibukun46@gmail.com
 - LinkedIn https://www.linkedin.com/in/ibukunoluwa-oyeniyi-86b202159/ (725 followers, 500+ connections)
 - GitHub https://github.com/ibkay998 · LeetCode https://leetcode.com/ibkay998
-- B.Sc. Civil Engineering, University of Lagos (2022). Worked as a Civil Engineer (Torek Engineering, Apr 2022–Jan 2023)
+- B.Sc. Civil Engineering, University of Lagos, 2015–2021 (owner, 2026-11-07; CV lists Jan 2022 as the award date). Worked as a Civil Engineer (Torek Engineering, Apr 2022–Jan 2023)
   while doing HNG internship → self-taught pivot into software.
 
 ## Career progression (LinkedIn) — Babban Gona, 3 yrs 11 mos
@@ -91,5 +91,4 @@ Designs work that tests the frontier of what coding agents can reliably do.
 
 ## How AI fluency is evidenced
 (1) AfterQuery: paid to design tasks that measure frontier coding agents; (2) leads AI adoption across Babban Gona
-engineering teams; (3) shipped an AI product (Master Anything); (4) this site is scored and iterated by a council of
-frontier models (Claude Opus, GPT/Codex, Gemini); the critiques and scores are in docs/council/.
+engineering teams; (3) shipped an AI product (Master Anything).

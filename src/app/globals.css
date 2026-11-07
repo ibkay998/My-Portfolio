@@ -212,23 +212,11 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .glyph-legend .glyph { height: 12px; width: 12px; border-width: 1.5px; }
 .glyph-legend .glyph--shield { height: 14px; width: 12px; }
 
-.practice { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); margin-top: 48px; }
+.practice { display: grid; gap: 24px; grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
 .practice li { border-top: 1px solid var(--ink); display: flex; flex-direction: column; gap: 12px; padding-top: 24px; }
 .practice h3 { font-size: 1.6rem; line-height: 1.08; }
 .practice p:not(.kicker) { color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
 .practice .text-link { align-self: flex-start; }
-
-/* Scorecard */
-.scorecard { border-top: 1px solid var(--ink); margin-top: 48px; padding-top: 20px; }
-.scorecard summary { cursor: pointer; display: grid; gap: 4px; list-style: none; }
-.scorecard summary::-webkit-details-marker { display: none; }
-.scorecard summary strong { font-family: var(--display); font-size: 1.6rem; font-weight: 400; line-height: 1.15; }
-.scorecard summary strong::after { content: 'Show scores +'; color: var(--coral-ink); display: block; font: 700 0.8rem var(--body); letter-spacing: 0.08em; margin-top: 8px; text-transform: uppercase; }
-.scorecard[open] summary strong::after { content: 'Hide scores −'; }
-.scorecard table { border-collapse: collapse; font-variant-numeric: tabular-nums; margin-top: 20px; width: 100%; }
-.scorecard th, .scorecard td { border-bottom: 1px solid var(--line); padding: 10px 12px 10px 0; text-align: left; }
-.scorecard thead th { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
-.scorecard td { font-family: var(--display); font-size: 1.4rem; }
 
 /* Career */
 .stairs { align-items: end; display: grid; gap: 0; grid-template-columns: repeat(6, 1fr); min-height: 420px; }

@@ -9,7 +9,6 @@ export const links = {
   github: 'https://github.com/ibkay998',
   leetcode: 'https://leetcode.com/ibkay998',
   repo: 'https://github.com/ibkay998/My-Portfolio',
-  council: 'https://github.com/ibkay998/My-Portfolio/tree/main/docs/council',
   evidence: 'https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md',
 }
 
@@ -112,13 +111,6 @@ export const aiPractice = [
     body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. I’m its founder and product engineer.',
     href: 'https://masteranything.app',
     cta: 'Visit masteranything.app',
-  },
-  {
-    kicker: 'On this page',
-    title: 'This site is reviewed by a model council',
-    body: 'Claude Opus, GPT (Codex) and Gemini score each round of this portfolio against one shared rubric, and I fix what they find. The scorecard is below; the full critiques are in the repository.',
-    href: links.council,
-    cta: 'Read the council log',
   },
 ]
 
@@ -224,16 +216,3 @@ export const nav = [
   { href: '#discipline', label: 'Discipline' },
   { href: '#contact', label: 'Contact' },
 ]
-
-// Weighted scores out of 10 from docs/council/r*-*.md. R0 scored the old live site.
-export const council = {
-  models: ['Codex (GPT)', 'Gemini', 'Claude Opus'],
-  rounds: [
-    { label: 'R0 · old site', scores: ['6.30', null, null] },
-    { label: 'R1 · first rebuild', scores: ['7.40', '7.90', '7.98'] },
-    { label: 'R2', scores: ['8.23', '8.63', '8.53'] },
-    { label: 'R3 · zero-JS static build', scores: ['8.60', '9.05', '8.75'] },
-    { label: 'R4', scores: ['8.78', '9.29', '8.90'] },
-    { label: 'R5 · final', scores: ['8.85', '9.42', '8.95'] },
-  ] as { label: string; scores: (string | null)[] }[],
-}

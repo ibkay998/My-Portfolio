@@ -5,7 +5,6 @@ import Ledger from '@/components/Ledger'
 import {
   aiPractice,
   careerSteps,
-  council,
   engineeringFacts,
   exportSteps,
   failureBoundary,
@@ -189,31 +188,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-
-            <details className="scorecard">
-              <summary>
-                <span className="kicker">Council scorecard</span>
-                <strong>How three models scored this portfolio, round by round</strong>
-              </summary>
-              <table>
-                <caption className="sr-only">Scores out of 10 from each model, by review round</caption>
-                <thead>
-                  <tr><th scope="col">Round</th>{council.models.map((m) => <th key={m} scope="col">{m}</th>)}</tr>
-                </thead>
-                <tbody>
-                  {council.rounds.map((r) => (
-                    <tr key={r.label}>
-                      <th scope="row">{r.label}</th>
-                      {r.scores.map((score, i) => <td key={i}>{score ?? '—'}</td>)}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              <p className="receipt">
-                Same seven-criterion rubric each round, written by the Codex reviewer in round 0. Full critiques:{' '}
-                <a href={links.council}>docs/council</a>.
-              </p>
-            </details>
           </div>
         </section>
 
