@@ -58,6 +58,9 @@ Designs work that tests the frontier of what coding agents can reliably do.
   languages, pairing realistic bugs with deterministic validation (previous portfolio, user-authored). All 18 task packages were approved (owner, 2026-11-07; Mercor lists them as
   advanced to Ready for Review, which was the earlier stage) — deterministic integration
   suites, NOP/oracle separation, fair specifications, calibrated multi-model difficulty probes. Langs: Python, Rust, Java.
+- Project Silver (SWE-Bench-Pro-style task authoring): authored coding tasks against three of my own repositories that
+  AfterQuery approved for the program; 2 tasks approved before the project was paused (AfterQuery dashboard, viewed
+  2026-11-07).
 - Project Fenrir (systems security): discovered, reproduced and repaired memory-safety vulnerabilities using
   sanitizer-backed fuzzing inputs; 3 approved paid findings, incl. a cross-call heap-use-after-free in Rust archive pipelines.
 - Method: diagnose the exact failure boundary (environment, contract, tests, verifier, model reasoning, infra), then

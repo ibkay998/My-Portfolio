@@ -169,7 +169,7 @@ export default function Home() {
               </div>
               <Ledger />
               <p className="receipt">
-                Outcomes as listed on my Mercor profile. Task contents are confidential.{' '}
+                Outcomes from my AfterQuery dashboard and Mercor profile. Task contents are confidential.{' '}
                 <a href={links.evidence}>Evidence file</a>
               </p>
             </div>

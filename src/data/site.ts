@@ -84,6 +84,18 @@ export const afterQuery: LedgerRow[] = [
     legend: ['Approved'],
   },
   {
+    name: 'Project Silver',
+    type: 'SWE-Bench-Pro-style tasks',
+    total: 2,
+    approved: 2,
+    review: 0,
+    glyph: 'square',
+    headline: '2 tasks approved',
+    detail:
+      'Coding tasks in the SWE-Bench Pro style, authored against three of my own repositories that AfterQuery approved for the program. 2 approved before the project was paused.',
+    legend: ['Approved'],
+  },
+  {
     name: 'Project Fenrir',
     type: 'Systems security research',
     total: 3,
