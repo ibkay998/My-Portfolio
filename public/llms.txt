@@ -17,7 +17,7 @@ https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 - Cross-service: backend and cross-service work across Config, Entity, Workflow, Inventory and IAM services; resolves identity, permission and assignment failures across API gateways, persistence and mobile sync.
 - Data: Odoo integrations synchronizing tens of millions of records. 20+ projects and workstreams delivered.
 - AI evaluation, AfterQuery Project Gold: 14 repository tasks authored; 3 approved and 11 advanced to human review; 0 rejections in the cycle.
-- AI evaluation, Project Pluto: 18 terminal-agent task packages advanced to Ready for Review (Python, Rust, Java), with deterministic integration suites, oracle/no-op separation and multi-model difficulty calibration.
+- AI evaluation, Project Pluto: 18 terminal-agent task packages approved (Python, Rust, Java), with deterministic integration suites, oracle/no-op separation and multi-model difficulty calibration.
 - Security, Project Fenrir: 3 approved paid findings from sanitizer-backed fuzzing, including a cross-call heap use-after-free in a Rust archive pipeline.
 - AI adoption: leads AI-assisted engineering across multiple Babban Gona teams: tool selection per task, reusable repository context, validation so AI-written work is checkable.
 - Problem solving: 573 LeetCode problems solved (196 easy, 308 medium, 69 hard). In 2022: 905 submissions on 346 days, 65-day max streak. 365-day and 500-day badges. https://leetcode.com/ibkay998
@@ -35,6 +35,6 @@ TypeScript, Python, React, Next.js, React Native, Expo, Node.js, NestJS, Postgre
 B.Sc. Civil Engineering, University of Lagos (2022). Civil Engineer at Torek Engineering (2022) before moving into software full time in 2023.
 
 ## Links
-- CV: https://myportforlio.vercel.app/Ibukunoluwa-Oyeniyi-CV.pdf
+- CV: https://ibukunoluwa-oyeniyi.vercel.app/Ibukunoluwa-Oyeniyi-CV.pdf
 - LinkedIn: https://www.linkedin.com/in/ibukunoluwa-oyeniyi-86b202159/
 - GitHub: https://github.com/ibkay998

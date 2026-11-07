@@ -76,13 +76,13 @@ export const afterQuery: LedgerRow[] = [
     name: 'Project Pluto',
     type: 'Benchmark authoring',
     total: 18,
-    approved: 0,
-    review: 18,
+    approved: 18,
+    review: 0,
     glyph: 'square',
-    headline: '18 packages Ready for Review',
+    headline: '18 task packages approved',
     detail:
       'Terminal-agent engineering tasks in Python, Rust and Java that pair realistic bugs with deterministic integration suites, oracle solutions kept separate from no-op baselines, fair specifications and multi-model difficulty probes.',
-    legend: ['Ready for Review (not yet approved)'],
+    legend: ['Approved'],
   },
   {
     name: 'Project Fenrir',

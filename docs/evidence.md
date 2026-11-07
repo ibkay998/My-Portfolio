@@ -55,7 +55,8 @@ Designs work that tests the frontier of what coding agents can reliably do.
   Authored 14 codebase tasks in a documented delivery cycle; 3 approved and
   11 advanced to human review with ZERO rejections in the cycle.
 - Project Pluto (benchmark authoring): authored and calibrated terminal-agent engineering tasks across multiple
-  languages, pairing realistic bugs with deterministic validation (previous portfolio, user-authored). Advanced 18 task packages to Ready for Review — deterministic integration
+  languages, pairing realistic bugs with deterministic validation (previous portfolio, user-authored). All 18 task packages were approved (owner, 2026-11-07; Mercor lists them as
+  advanced to Ready for Review, which was the earlier stage) — deterministic integration
   suites, NOP/oracle separation, fair specifications, calibrated multi-model difficulty probes. Langs: Python, Rust, Java.
 - Project Fenrir (systems security): discovered, reproduced and repaired memory-safety vulnerabilities using
   sanitizer-backed fuzzing inputs; 3 approved paid findings, incl. a cross-call heap-use-after-free in Rust archive pipelines.

@@ -13,7 +13,7 @@ const ogAlt =
   'Ibukunoluwa Oyeniyi: I make software prove itself. 13.7 s to 45.5 ms median latency on a controlled 20,000-record benchmark, 0 rejections in an AI-evaluation review cycle, Developer of the Year.'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://myportforlio.vercel.app'),
+  metadataBase: new URL('https://ibukunoluwa-oyeniyi.vercel.app'),
   title: 'Ibukunoluwa Oyeniyi · Full-stack engineer',
   description,
   alternates: { canonical: '/' },
@@ -43,7 +43,7 @@ const person = {
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'University of Lagos' },
   award: 'Developer of the Year, Babban Gona',
   email: 'ibukun46@gmail.com',
-  url: 'https://myportforlio.vercel.app',
+  url: 'https://ibukunoluwa-oyeniyi.vercel.app',
   sameAs: [links.linkedin, links.github, links.leetcode],
   knowsAbout: [
     'TypeScript', 'React', 'Next.js', 'React Native', 'Expo', 'Python', 'Node.js', 'NestJS', 'PostgreSQL', 'MongoDB',
