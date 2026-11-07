@@ -50,7 +50,7 @@ export default function Home() {
             </h1>
             <p className="hero__intro">
               I’m Ibukunoluwa Oyeniyi, a civil engineer turned software engineer. I lead frontend for an agricultural
-              operations platform used by 10,000+ people across Nigeria, ship my own AI and mobile products, and get
+              operations platform used by 10,000+ people across Nigeria, build AI and mobile products, and get
               paid to design tasks that test what frontier coding agents can really do.
             </p>
             <ul className="proofs">
@@ -71,10 +71,10 @@ export default function Home() {
           </div>
           <div className="hero__portrait">
             <Image
-              src="/media/portrait.jpg"
+              src="/media/portrait.webp"
               alt="Portrait of Ibukunoluwa Oyeniyi"
-              width={800}
-              height={800}
+              width={640}
+              height={640}
               priority
               sizes="(max-width: 900px) 70vw, 420px"
             />
@@ -85,7 +85,7 @@ export default function Home() {
         <section id="evidence" className="section shell" aria-labelledby="evidence-title">
           <div className="section__head">
             <p className="kicker">01 · Selected evidence</p>
-            <h2 id="evidence-title">Every claim here comes with a receipt.</h2>
+            <h2 id="evidence-title">Selected work, with the evidence behind it.</h2>
             <p className="section__lede">
               I can’t show screenshots of my employer’s product, so this section shows the numbers, how the systems
               fit together, and where each claim comes from.
@@ -112,8 +112,8 @@ export default function Home() {
               <h3>Designed and shipped a full export service in under a week.</h3>
               <dl className="case">
                 <div><dt>Constraint</dt><dd>Designed and delivered in under one week.</dd></div>
-                <div><dt>Scope</dt><dd>End to end, from frontend integration to private downloads (diagram).</dd></div>
-                <div><dt>Safety</dt><dd>Tenant-scoped permissions on every export and every download.</dd></div>
+                <div><dt>Scope</dt><dd>End to end, from frontend integration to private downloads, as shown.</dd></div>
+                <div><dt>Safety</dt><dd>Tenant-scoped permissions and private downloads.</dd></div>
               </dl>
             </div>
             <figure className="flow">
@@ -128,7 +128,7 @@ export default function Home() {
               </ol>
               <figcaption className="receipt">
                 Architecture as described on my CV. No internal code or screenshots, out of respect for employer
-                confidentiality.
+                confidentiality. <a href={links.evidence}>Evidence file</a>
               </figcaption>
             </figure>
           </article>
@@ -141,6 +141,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <a href={links.discuss} className="text-link discuss">Ask me about this work <span aria-hidden="true">→</span></a>
         </section>
 
         {/* AI */}
@@ -150,7 +151,7 @@ export default function Home() {
               <p className="kicker">02 · AI</p>
               <h2 id="ai-title">AI is how I work, and what I test.</h2>
               <p className="section__lede">
-                I use AI every day to build, and I get paid to design the tasks that measure where it breaks.
+                I use AI to build, and I get paid to design the tasks that measure where it breaks.
               </p>
             </div>
 
@@ -162,14 +163,17 @@ export default function Home() {
                   When an agent fails, I find the exact boundary where it went wrong, then make the smallest repair the
                   evidence supports, without making the task unfair or weakening its tests.
                 </p>
-                <ol className="boundary" aria-label="Failure boundaries I check, in order">
+                <ol className="boundary" aria-label="Failure boundaries I check">
                   {failureBoundary.map((b) => (
                     <li key={b}>{b}</li>
                   ))}
                 </ol>
               </div>
               <Ledger />
-              <p className="receipt">Outcomes as listed on my Mercor profile. Task contents are confidential.</p>
+              <p className="receipt">
+                Outcomes as listed on my Mercor profile. Task contents are confidential.{' '}
+                <a href={links.evidence}>Evidence file</a>
+              </p>
             </div>
 
             <ul className="practice">
@@ -187,7 +191,7 @@ export default function Home() {
               ))}
             </ul>
 
-            <details className="scorecard" open>
+            <details className="scorecard">
               <summary>
                 <span className="kicker">Council scorecard</span>
                 <strong>How three models scored this portfolio, round by round</strong>
@@ -257,6 +261,7 @@ export default function Home() {
                     <Image src={p.image.src} alt="" width={p.image.width} height={p.image.height} sizes="(max-width: 900px) 100vw, 640px" />
                   </a>
                 )}
+                {p.image && <p className="product__note">Screenshot of the public site, November 2026</p>}
                 <div className="product__text">
                   <p className="kicker">
                     {p.role} · <span className={p.status === 'Live' ? 'status status--live' : 'status'}>{p.status}</span>

@@ -3,6 +3,7 @@
 export const links = {
   email: 'mailto:ibukun46@gmail.com',
   emailLabel: 'ibukun46@gmail.com',
+  discuss: 'mailto:ibukun46@gmail.com?subject=Your%20AgricOS%20and%20systems%20work',
   cv: '/Ibukunoluwa-Oyeniyi-CV.pdf',
   linkedin: 'https://www.linkedin.com/in/ibukunoluwa-oyeniyi-86b202159/',
   github: 'https://github.com/ibkay998',
@@ -20,7 +21,7 @@ export const heroProofs = [
   },
   {
     href: '#afterquery',
-    value: '0 rejections',
+    value: '0 rejections in one cycle',
     label: 'AfterQuery Project Gold: 14 tasks, 3 approved, 11 in human review',
   },
   {
@@ -34,6 +35,7 @@ export const engineeringFacts = [
   { value: '79 → 0', label: 'ESLint warning backlog, plus changed-line quality gates and coverage checks' },
   { value: '10s of millions', label: 'Records kept in sync through Odoo integrations' },
   { value: '20+', label: 'Projects and workstreams delivered for a platform used by 10,000+ people' },
+  { value: '5 services', label: 'Cross-service work across Config, Entity, Workflow, Inventory and IAM: identity, permission and mobile-sync failures' },
 ]
 
 export const exportSteps = [
@@ -106,8 +108,8 @@ export const aiPractice = [
   },
   {
     kicker: 'In product',
-    title: 'I build and run an AI product',
-    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. As founder and product engineer I own its architecture, auth, data flows and AI integrations.',
+    title: 'I build an AI product',
+    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. I built it end to end as founder and product engineer.',
     href: 'https://masteranything.app',
     cta: 'Visit masteranything.app',
   },
@@ -123,12 +125,12 @@ export const aiPractice = [
 export type CareerStep = { date: string; role: string; org: string; note?: string; star?: boolean }
 
 export const careerSteps: CareerStep[] = [
-  { date: 'Apr 2022', role: 'Civil Engineer', org: 'Torek Engineering', note: 'B.Sc. Civil Engineering, University of Lagos, while doing software internships on the side.' },
+  { date: 'Apr 2022', role: 'Civil Engineer', org: 'Torek Engineering', note: 'B.Sc. Civil Engineering, University of Lagos. Did the HNG software internship on the side.' },
   { date: 'Jan 2023', role: 'Technical Accelerator intern', org: 'Babban Gona', note: 'Switched careers into software full time.' },
   { date: 'Aug 2023', role: 'Associate Developer', org: 'Babban Gona' },
   { date: 'Year 2', role: 'Developer of the Year', org: 'Babban Gona', note: 'For delivery impact, engineering quality and consistent ownership across critical products.', star: true },
   { date: 'Feb 2025', role: 'Developer I', org: 'Babban Gona' },
-  { date: 'Jul 2025', role: 'Developer II', org: 'Babban Gona', note: 'Today: lead a frontend team of about five engineers and own the AgricOS configuration platform.' },
+  { date: 'Jul 2025', role: 'Developer II', org: 'Babban Gona', note: 'Today: lead a frontend team of about five engineers (three years of leadership responsibility) and own the AgricOS configuration platform.' },
 ]
 
 export const sideLanes = [
@@ -161,7 +163,7 @@ export const products: Product[] = [
     stack: ['Next.js 16', 'TypeScript', 'Convex', 'Clerk', 'LLM integrations'],
     status: 'Live',
     href: 'https://masteranything.app',
-    image: { src: '/media/masteranything.jpg', width: 1200, height: 596, alt: 'Master Anything homepage: “Master Anything You Dream Of”' },
+    image: { src: '/media/masteranything.webp', width: 1200, height: 596, alt: 'Master Anything homepage: “Master Anything You Dream Of”' },
   },
   {
     name: 'Wholeflo',
@@ -172,7 +174,7 @@ export const products: Product[] = [
     stack: ['React Native', 'Expo Router', 'SQLite', 'RevenueCat'],
     status: 'Pre-launch · waitlist open',
     href: 'https://wholeflo.com',
-    image: { src: '/media/wholeflo.jpg', width: 1400, height: 875, alt: 'Wholeflo landing page: “Understand your body, embrace your rhythm”' },
+    image: { src: '/media/wholeflo.webp', width: 1200, height: 750, alt: 'Wholeflo landing page: “Understand your body, embrace your rhythm”' },
   },
   {
     name: 'PennyTots',

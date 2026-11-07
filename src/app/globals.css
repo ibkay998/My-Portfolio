@@ -52,6 +52,9 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
 h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .receipt { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.8rem; line-height: 1.55; margin-top: 18px; padding-top: 12px; }
 .receipt::before { content: 'Receipt · '; color: var(--ink); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.68rem; }
+
+.receipt a { border-bottom: 1px solid currentColor; color: var(--ink); font-weight: 600; }
+.receipt--light a { color: var(--paper); }
 .receipt--light { border-color: var(--line-light); color: var(--muted-light); }
 .receipt--light::before { color: var(--paper); }
 
@@ -173,7 +176,7 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .flow__steps li:nth-child(4) { background: rgba(255, 109, 67, 0.08); }
 .flow__steps li:nth-child(5) strong { color: var(--coral-ink); }
 
-.facts { border-top: 1px solid var(--ink); display: grid; grid-template-columns: repeat(3, 1fr); }
+.facts { border-top: 1px solid var(--ink); display: grid; grid-template-columns: repeat(4, 1fr); }
 .facts li { align-content: start; display: grid; gap: 6px; padding: 32px 24px 0 0; }
 .facts li + li { border-left: 1px solid var(--line); padding-left: 24px; }
 .facts strong { font-family: var(--display); font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1; }
@@ -218,9 +221,9 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .scorecard { border-top: 1px solid var(--ink); margin-top: 48px; padding-top: 20px; }
 .scorecard summary { cursor: pointer; display: grid; gap: 4px; list-style: none; }
 .scorecard summary::-webkit-details-marker { display: none; }
-.scorecard summary strong { font-family: var(--display); font-size: 1.6rem; font-weight: 400; }
-.scorecard summary strong::after { content: ' +'; color: var(--coral-ink); }
-.scorecard[open] summary strong::after { content: ' −'; }
+.scorecard summary strong { font-family: var(--display); font-size: 1.6rem; font-weight: 400; line-height: 1.15; }
+.scorecard summary strong::after { content: ' · show scores'; color: var(--coral-ink); font: 700 0.8rem var(--body); letter-spacing: 0.08em; text-transform: uppercase; }
+.scorecard[open] summary strong::after { content: ' · hide'; }
 .scorecard table { border-collapse: collapse; font-variant-numeric: tabular-nums; margin-top: 20px; width: 100%; }
 .scorecard th, .scorecard td { border-bottom: 1px solid var(--line); padding: 10px 12px 10px 0; text-align: left; }
 .scorecard thead th { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -280,7 +283,7 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .heat--4 { fill: var(--acid); }
 .heatmap__legend { align-items: center; color: var(--muted-light); display: flex; flex-wrap: wrap; font-size: 0.78rem; gap: 6px; margin-top: 24px; }
 .swatch { border-radius: 2px; display: inline-block; height: 11px; width: 11px; }
-.swatch.heat { background: #23271f; }
+.swatch.heat--0 { background: #2c3127; outline: 1px solid var(--line-light); }
 .swatch.heat--1 { background: #4b6421; }
 .swatch.heat--2 { background: #7ca22b; }
 .swatch.heat--3 { background: #a9d93a; }
@@ -301,6 +304,8 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .lc-topics li span:last-child { color: var(--muted-light); font-variant-numeric: tabular-nums; }
 
 /* Contact */
+.discuss { margin-top: 32px; }
+.product__note { color: var(--muted); font-size: 0.74rem; margin-top: -12px; }
 .contact { display: grid; gap: 28px; }
 .contact h2 { font-size: clamp(2.6rem, 6vw, 5.4rem); line-height: 0.96; letter-spacing: -0.045em; max-width: 14ch; }
 .contact h2 em { display: block; }
@@ -313,13 +318,6 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
 .footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.84rem; padding: 28px 0 40px; }
 .footer a { border-bottom: 1px solid currentColor; color: var(--ink); display: inline-block; padding-block: 4px 2px; }
 
-/* One-time reveal, CSS only, where scroll timelines are supported */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .latency__bar { animation: grow linear both; animation-timeline: view(); animation-range: entry 20% cover 40%; }
-  }
-}
-@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -344,6 +342,14 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
   .discipline { grid-template-columns: 1fr; }
 }
 
+@media (min-width: 681px) and (max-width: 1080px) {
+  .hero { grid-template-columns: 1fr 200px; gap: 32px; align-items: start; }
+  .hero__portrait { width: 100%; justify-self: end; margin-top: 40px; }
+  .proofs strong { font-size: 1.45rem; }
+  .facts { grid-template-columns: repeat(2, 1fr); }
+  .facts li:nth-child(3) { border-left: 0; padding-left: 0; }
+}
+
 /* Phone */
 @media (max-width: 680px) {
   :root { --shell: calc(100% - 36px); }
@@ -352,7 +358,7 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
   .eyebrow__long { display: none; }
   .hero__portrait { display: none; }
   .latency__tick, .latency__note { font-size: 21px; }
-  .latency__label { font-size: 17px; }
+  .latency__label { font-size: 20px; letter-spacing: 0; }
   .latency__speedup { font-size: 38px; }
   .evidence { padding: 32px 0 40px; }
   .case > div { grid-template-columns: 1fr; gap: 2px; }
@@ -366,7 +372,7 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
   .proofs li + li { border-left: 0; border-top: 1px solid var(--line); }
   .proofs a, .proofs li + li a { padding: 14px 0; }
   .proofs strong { font-size: 1.6rem; }
-  .section { padding: 64px 0; }
+  .section { padding: 48px 0; }
   .section__head { margin-bottom: 28px; }
   .flow__steps { grid-template-columns: 1fr; }
   .flow__steps li { grid-template-columns: 28px 96px 1fr; align-items: baseline; gap: 10px; padding: 10px 12px; }
@@ -377,6 +383,10 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
   .afterquery { padding: 20px 16px; }
   .ledger__row { grid-template-columns: 1fr; gap: 10px; }
   .products { grid-template-columns: 1fr; }
+  .nav__links { gap: 14px; }
+  .nav__links a { padding: 7px 0; }
+  .nav__links a[href="#contact"] { display: none; }
+  .eyebrow { letter-spacing: 0.06em; }
   .heatmap__months { grid-template-columns: repeat(3, max-content); gap: 18px 14px; }
   .heatmap__months svg { width: 96px; height: auto; }
   .latency__value { font-size: 34px; }

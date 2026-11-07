@@ -1,3 +1,5 @@
+import { links } from '@/data/site'
+
 const BEFORE_S = 13.7
 const AFTER_S = 0.0455
 const MIN_LOG = -2 // 10 ms
@@ -57,7 +59,7 @@ export default function LatencyChart() {
       </svg>
       <figcaption className="receipt">
         Controlled 20,000-record benchmark, median request latency, measured before and after. Work done with
-        backend engineers. Source: CV and Mercor profile.
+        backend engineers. Source: CV and Mercor profile. <a href={links.evidence}>Evidence file</a>
       </figcaption>
     </figure>
   )

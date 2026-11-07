@@ -6,7 +6,7 @@ Claims below are drawn from a public evidence file:
 https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 
 ## Current roles
-- Babban Gona, Jan 2023 to present. Technical Accelerator intern, then Associate Developer (Aug 2023), Developer I (Feb 2025), Developer II (Jul 2025). Developer of the Year in second year, for delivery impact, engineering quality and consistent ownership across critical products. Leads a frontend team of about five engineers. Owns the AgricOS multi-tenant configuration platform, used by 10,000+ people across Nigeria.
+- Babban Gona, Jan 2023 to present. Technical Accelerator intern, then Associate Developer (Aug 2023), Developer I (Feb 2025), Developer II (Jul 2025). Developer of the Year in second year, for delivery impact, engineering quality and consistent ownership across critical products. Leads a frontend team of about five engineers, with three years of leadership responsibility. Owns the AgricOS multi-tenant configuration platform, used by 10,000+ people across Nigeria.
 - AfterQuery Experts, 2026 to present. Software Engineering & AI Evaluation Expert (contract). Designs tasks that measure frontier coding agents.
 - Master Anything, 2026 to present. Founder and product engineer of an AI learning platform. https://masteranything.app
 
@@ -28,7 +28,7 @@ https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 - Quikaar (no public URL): multi-store marketplace. Next.js, TypeScript, PostgreSQL, Redis.
 
 ## Skills
-TypeScript, Python, React, Next.js, React Native, Expo, Node.js, NestJS, PostgreSQL, MongoDB, Redis, SQLite, GraphQL, REST, Convex, GCP, AWS, Docker, GitHub Actions, Playwright, SonarQube, LLM integration, AI agent evaluation, benchmark design, fuzzing and sanitizers.
+TypeScript, Python, React, Next.js, React Native, Expo, Node.js, NestJS, PostgreSQL, MongoDB, Redis, SQLite, GraphQL, REST, Convex, Rust, Java, GCP, AWS, Docker, GitHub Actions, Playwright, SonarQube, LLM integration, AI agent evaluation, benchmark design, fuzzing and sanitizers.
 
 ## Background
 B.Sc. Civil Engineering, University of Lagos (2022). Civil Engineer at Torek Engineering (2022) before moving into software full time in 2023.

@@ -58,7 +58,9 @@ function Month({ index }: { index: number }) {
         {MONTHS[index]}
         <span className="month__badge" data-earned={leetcode.monthlyBadges[index]} title={leetcode.monthlyBadges[index] ? 'Monthly challenge badge earned' : 'Badge missed'} />
       </span>
-      <span className="sr-only">{`${MONTHS[index]}: ${monthTotal} submissions`}</span>
+      <span className="sr-only">
+        {`${MONTHS[index]}: ${monthTotal} submissions; monthly challenge badge ${leetcode.monthlyBadges[index] ? 'earned' : 'missed'}`}
+      </span>
     </div>
   )
 }
