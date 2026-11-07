@@ -4,8 +4,24 @@
   "outputDirectory": "out",
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "myportforlio.vercel.app"
+        }
+      ],
+      "destination": "https://ibukunoluwa-oyeniyi.vercel.app/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "myportforlio.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "myportforlio.vercel.app"
+        }
+      ],
       "destination": "https://ibukunoluwa-oyeniyi.vercel.app/:path*",
       "permanent": true
     }
