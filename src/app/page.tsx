@@ -49,9 +49,8 @@ export default function Home() {
               I make software <em>prove</em> itself.
             </h1>
             <p className="hero__intro">
-              I’m Ibukunoluwa Oyeniyi. As Developer II at Babban Gona I lead frontend for a platform used by 10,000+
-              people across Nigeria. I also build AI and mobile products, and design coding-agent evaluations for
-              AfterQuery.
+              I’m Ibukunoluwa Oyeniyi, Developer II at Babban Gona. I lead frontend for a platform used by 10,000+
+              people, build AI and mobile products, and design coding-agent evaluations.
             </p>
             <ul className="proofs">
               {heroProofs.map((p) => (
@@ -89,7 +88,7 @@ export default function Home() {
             <p className="section__lede">
               I can’t show screenshots of my employer’s product, so this section shows the numbers, how the systems
               fit together, and where each claim comes from. Stack: React, Next.js, TypeScript, React Query, Python,
-              PostgreSQL and GCP.
+              PostgreSQL, GCP, Docker, GitHub Actions, Playwright and SonarQube.
             </p>
           </div>
 
@@ -257,7 +256,7 @@ export default function Home() {
             {products.map((p) => (
               <article key={p.name} className={p.image ? 'product product--visual' : 'product'}>
                 {p.image && (
-                  <a href={p.href} className="product__shot">
+                  <a href={p.href} className="product__shot" tabIndex={-1}>
                     <Image src={p.image.src} alt={p.image.alt} width={p.image.width} height={p.image.height} sizes="(max-width: 900px) 100vw, 640px" />
                   </a>
                 )}

@@ -35,7 +35,7 @@ export const engineeringFacts = [
   { value: '79 → 0', label: 'ESLint warning backlog, plus changed-line quality gates and coverage checks' },
   { value: '10s of millions', label: 'Records kept in sync through Odoo integrations' },
   { value: '20+', label: 'Projects and workstreams delivered for a platform used by 10,000+ people' },
-  { value: '5 services', label: 'Cross-service work across Config, Entity, Workflow, Inventory and IAM: identity, permission and mobile-sync failures' },
+  { value: '5 services', label: 'Cross-service work across Config, Entity, Workflow, Inventory and IAM: identity, permission and assignment failures across API gateways, persistence and mobile sync' },
 ]
 
 export const exportSteps = [
@@ -233,5 +233,6 @@ export const council = {
     { label: 'R1 · first rebuild', scores: ['7.40', '7.90', '7.98'] },
     { label: 'R2', scores: ['8.23', '8.63', '8.53'] },
     { label: 'R3 · zero-JS static build', scores: ['8.60', '9.05', '8.75'] },
+    { label: 'R4', scores: ['8.78', '9.29', '8.90'] },
   ] as { label: string; scores: (string | null)[] }[],
 }

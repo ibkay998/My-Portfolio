@@ -388,8 +388,8 @@ h1 em, h2 em { color: var(--coral-ink); font-style: italic; }
   .afterquery { padding: 20px 16px; }
   .ledger__row { grid-template-columns: 1fr; gap: 10px; }
   .products { grid-template-columns: 1fr; }
-  .nav__links { gap: 10px; }
-  .nav__links a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0; }
+  .nav__links { gap: 0; justify-content: space-between; }
+  .nav__links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
   .nav__links a[href="#contact"] { display: none; }
   .eyebrow { letter-spacing: 0.06em; }
   .heatmap__months { grid-template-columns: repeat(3, max-content); gap: 18px 14px; }

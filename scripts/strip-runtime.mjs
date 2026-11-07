@@ -1,6 +1,6 @@
 // The page is static HTML with no client components, so the Next.js runtime
 // only delays rendering. Remove every script except JSON-LD structured data.
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, readdir, rm, writeFile } from 'node:fs/promises'
 
 const file = 'out/index.html'
 const html = (await readFile(file, 'utf8'))
@@ -9,4 +9,9 @@ const html = (await readFile(file, 'utf8'))
 
 if (/<script(?![^>]*ld\+json)/.test(html)) throw new Error('A runtime script survived stripping')
 await writeFile(file, html)
-console.log(`Stripped runtime scripts from ${file}`)
+
+// RSC payload files are only fetched by the runtime we just removed.
+for (const name of await readdir('out')) {
+  if (name.endsWith('.txt') && name !== 'llms.txt') await rm(`out/${name}`)
+}
+console.log(`Stripped runtime scripts and RSC payloads from out/`)
