@@ -174,7 +174,7 @@ export const products: Product[] = [
     kicker: 'A private cycle and wellbeing companion.',
     description:
       'An offline-first wellbeing app: data stays on the device in SQLite, with biometric lock, optional sync, reminders, localization and RevenueCat subscriptions.',
-    role: 'Independent product',
+    role: 'Mobile engineer · 3-month contract, Jan 2026',
     stack: ['React Native', 'Expo Router', 'SQLite', 'RevenueCat'],
     status: 'Pre-launch · waitlist open',
     href: 'https://wholeflo.com',
@@ -195,7 +195,7 @@ export const products: Product[] = [
     kicker: 'Multi-store commerce.',
     description:
       'Product discovery, deals, multi-store carts, checkout, delivery estimates, vendor onboarding and real-time order operations.',
-    role: 'Marketplace build',
+    role: 'Full-stack · 6-month project, 2025',
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Redis'],
     status: 'No public URL',
   },

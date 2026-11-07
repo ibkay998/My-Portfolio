@@ -26,8 +26,8 @@ https://github.com/ibkay998/My-Portfolio/blob/main/docs/evidence.md
 ## Products
 - Master Anything (live): Next.js 16, TypeScript, Convex, Clerk, LLM integrations. https://masteranything.app
 - PennyTots (live): React Native community app with real-time chat, notifications, payments. React Native, Expo, NestJS, GraphQL, Socket.IO, MongoDB, AWS. https://pennytots.com
-- Wholeflo (pre-launch): offline-first cycle and wellbeing companion app. React Native, Expo Router, SQLite, RevenueCat. https://wholeflo.com
-- Quikaar (no public URL): multi-store marketplace. Next.js, TypeScript, PostgreSQL, Redis.
+- Wholeflo (pre-launch; 3-month mobile contract from Jan 2026): offline-first cycle and wellbeing companion app. React Native, Expo Router, SQLite, RevenueCat. https://wholeflo.com
+- Quikaar (no public URL; 6-month full-stack project in 2025): multi-store marketplace. Next.js, TypeScript, PostgreSQL, Redis.
 
 ## Skills
 TypeScript, Python, React, Next.js, React Native, Expo, Node.js, NestJS, PostgreSQL, MongoDB, Redis, SQLite, GraphQL, REST, Convex, Rust, Java, GCP, AWS, Docker, GitHub Actions, Playwright, SonarQube, LLM integration, AI agent evaluation, benchmark design, fuzzing and sanitizers.

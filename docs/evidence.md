@@ -73,10 +73,10 @@ Designs work that tests the frontier of what coding agents can reliably do.
 - PennyTots — https://pennytots.com (LIVE site). Mobile & full-stack developer, Jun 2023–present. React Native community
   app: real-time chat, profiles, following, push notifications, deep links, payments. Hardened unread state, pagination,
   group messaging, helpdesk notifications. React Native, Expo, Node.js/NestJS, GraphQL/REST, MongoDB, Socket.IO, AWS.
-- Wholeflo — https://wholeflo.com (landing page live, pre-launch with waitlist as of 2026-11-07). Independent product. "A cycle and wellbeing
+- Wholeflo — https://wholeflo.com (landing page live, pre-launch with waitlist as of 2026-11-07). 3-month contract starting Jan 2026 (owner, 2026-11-07). "A cycle and wellbeing
   companion" (previous portfolio); site title "WholeFlo - Period Tracker App". Offline-first wellbeing app: React Native, Expo Router, SQLite, secure local data, optional sync, notifications, localization,
   biometric protection, RevenueCat subscriptions.
-- Quikaar — marketplace (discovery, deals, multi-store carts, checkout, delivery estimates, vendor onboarding,
+- Quikaar — 6-month project in 2025 (owner, 2026-11-07). Marketplace (discovery, deals, multi-store carts, checkout, delivery estimates, vendor onboarding,
   real-time orders). Next.js, TypeScript, PostgreSQL, Redis. No public URL found.
 
 ## Problem solving — LeetCode (public API, 2026-11-07)
