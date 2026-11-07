@@ -234,5 +234,6 @@ export const council = {
     { label: 'R2', scores: ['8.23', '8.63', '8.53'] },
     { label: 'R3 · zero-JS static build', scores: ['8.60', '9.05', '8.75'] },
     { label: 'R4', scores: ['8.78', '9.29', '8.90'] },
+    { label: 'R5 · final', scores: ['8.85', '9.42', '8.95'] },
   ] as { label: string; scores: (string | null)[] }[],
 }
