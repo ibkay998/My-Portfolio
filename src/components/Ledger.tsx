@@ -13,13 +13,18 @@ export default function Ledger() {
             <p className="ledger__headline">{row.headline}</p>
             <div className="glyphs" aria-hidden="true">
               {Array.from({ length: row.total }, (_, i) => (
-                <span key={i} className={`glyph glyph--${row.glyph}`} data-approved={i < row.approved} />
+                <span
+                  key={i}
+                  className={`glyph glyph--${row.glyph}`}
+                  data-state={i < row.approved ? 'approved' : i < row.approved + row.review ? 'review' : 'open'}
+                />
               ))}
             </div>
             <ul className="glyph-legend" aria-hidden="true">
               {row.legend.map((label, i) => (
                 <li key={label}>
-                  <span className={`glyph glyph--${row.glyph}`} data-approved={i === 0} /> {label}
+                  <span className={`glyph glyph--${row.glyph}`} data-state={i === 0 && row.approved > 0 ? 'approved' : 'review'} />{' '}
+                  {label}
                 </li>
               ))}
             </ul>

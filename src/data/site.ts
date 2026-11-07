@@ -16,12 +16,12 @@ export const heroProofs = [
   {
     href: '#latency',
     value: '13.7 s → 45.5 ms',
-    label: 'Median latency after a query fix, on a 20,000-record benchmark',
+    label: 'Median latency after a query fix · controlled 20,000-record benchmark',
   },
   {
     href: '#afterquery',
     value: '0 rejections',
-    label: '14 agent-evaluation tasks authored for AfterQuery Project Gold',
+    label: 'AfterQuery Project Gold: 14 tasks, 3 approved, 11 in human review',
   },
   {
     href: '#career',
@@ -31,18 +31,18 @@ export const heroProofs = [
 ]
 
 export const engineeringFacts = [
-  { value: '79 → 0', label: 'ESLint warning backlog, held there with changed-line quality gates' },
+  { value: '79 → 0', label: 'ESLint warning backlog, plus changed-line quality gates and coverage checks' },
   { value: '10s of millions', label: 'Records kept in sync through Odoo integrations' },
   { value: '20+', label: 'Projects and workstreams delivered for a platform used by 10,000+ people' },
 ]
 
 export const exportSteps = [
-  { title: 'React client', detail: 'Request an export, track its status' },
+  { title: 'Frontend', detail: 'React integration' },
   { title: 'API', detail: 'Tenant-scoped permission check' },
   { title: 'Job queue', detail: 'PostgreSQL-backed async job' },
-  { title: 'Worker', detail: 'Recoverable: resumes after failure' },
-  { title: 'Stream', detail: 'CSV generated as a stream, not in memory' },
-  { title: 'Download', detail: 'Private, permissioned file' },
+  { title: 'Worker', detail: 'Recoverable worker' },
+  { title: 'Stream', detail: 'Streamed CSV generation' },
+  { title: 'Download', detail: 'Private download' },
 ]
 
 export type LedgerRow = {
@@ -50,6 +50,7 @@ export type LedgerRow = {
   type: string
   total: number
   approved: number
+  review: number
   glyph: 'square' | 'shield'
   headline: string
   detail: string
@@ -62,28 +63,31 @@ export const afterQuery: LedgerRow[] = [
     type: 'Repository task design',
     total: 14,
     approved: 3,
+    review: 11,
     glyph: 'square',
-    headline: '14 tasks · 0 rejections',
+    headline: '14 tasks · 0 rejections in the cycle',
     detail:
-      'Production-shaped coding tasks built from real repository histories, with test contracts strict enough to separate a real fix from a lucky one. 3 approved and 11 advanced to human review in one documented delivery cycle.',
-    legend: ['Approved', 'Advanced to human review'],
+      'Production-shaped coding tasks built from real repository histories, with robust test contracts, refined using model trajectories for fairness and signal. In one documented delivery cycle: 3 approved, 11 advanced to human review, none rejected.',
+    legend: ['Approved', 'In human review'],
   },
   {
     name: 'Project Pluto',
     type: 'Benchmark authoring',
     total: 18,
-    approved: 18,
+    approved: 0,
+    review: 18,
     glyph: 'square',
     headline: '18 packages Ready for Review',
     detail:
-      'Terminal-agent tasks in Python, Rust and Java: deterministic integration suites, oracle solutions kept separate from no-op baselines, fair specifications, and difficulty calibrated by probing multiple models.',
-    legend: ['Ready for Review'],
+      'Terminal-agent engineering tasks in Python, Rust and Java that pair realistic bugs with deterministic integration suites, oracle solutions kept separate from no-op baselines, fair specifications and multi-model difficulty probes.',
+    legend: ['Ready for Review (not yet approved)'],
   },
   {
     name: 'Project Fenrir',
     type: 'Systems security research',
     total: 3,
     approved: 3,
+    review: 0,
     glyph: 'shield',
     headline: '3 approved paid findings',
     detail:
@@ -102,15 +106,15 @@ export const aiPractice = [
   },
   {
     kicker: 'In product',
-    title: 'I ship AI to real users',
-    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. I built it end to end on Next.js, Convex, Clerk and LLM integrations.',
+    title: 'I build and run an AI product',
+    body: 'Master Anything turns a learner’s goal, experience and available time into a personal roadmap, curriculum and assessments. As founder and product engineer I own its architecture, auth, data flows and AI integrations.',
     href: 'https://masteranything.app',
     cta: 'Visit masteranything.app',
   },
   {
     kicker: 'On this page',
-    title: 'This site was hill-climbed by a model council',
-    body: 'Claude Opus, GPT (Codex) and Gemini scored every version of this portfolio against one shared rubric. I iterated until all three agreed. Their critiques, scores and my changes are public.',
+    title: 'This site is reviewed by a model council',
+    body: 'Claude Opus, GPT (Codex) and Gemini score each round of this portfolio against one shared rubric, and I fix what they find. The scorecard is below; the full critiques are in the repository.',
     href: links.council,
     cta: 'Read the council log',
   },
@@ -119,12 +123,12 @@ export const aiPractice = [
 export type CareerStep = { date: string; role: string; org: string; note?: string; star?: boolean }
 
 export const careerSteps: CareerStep[] = [
-  { date: 'Apr 2022', role: 'Civil Engineer', org: 'Torek Engineering', note: 'B.Sc. Civil Engineering, University of Lagos. Taught myself to code on the side.' },
+  { date: 'Apr 2022', role: 'Civil Engineer', org: 'Torek Engineering', note: 'B.Sc. Civil Engineering, University of Lagos, while doing software internships on the side.' },
   { date: 'Jan 2023', role: 'Technical Accelerator intern', org: 'Babban Gona', note: 'Switched careers into software full time.' },
   { date: 'Aug 2023', role: 'Associate Developer', org: 'Babban Gona' },
-  { date: 'Year 2', role: 'Developer of the Year', org: 'Babban Gona', note: 'For delivery impact, engineering quality and ownership.', star: true },
+  { date: 'Year 2', role: 'Developer of the Year', org: 'Babban Gona', note: 'For delivery impact, engineering quality and consistent ownership across critical products.', star: true },
   { date: 'Feb 2025', role: 'Developer I', org: 'Babban Gona' },
-  { date: 'Jul 2025', role: 'Developer II · Frontend lead', org: 'Babban Gona', note: 'Lead a frontend team of about five engineers. Own the AgricOS configuration platform.' },
+  { date: 'Jul 2025', role: 'Developer II', org: 'Babban Gona', note: 'Today: lead a frontend team of about five engineers and own the AgricOS configuration platform.' },
 ]
 
 export const sideLanes = [
@@ -161,7 +165,7 @@ export const products: Product[] = [
   },
   {
     name: 'Wholeflo',
-    kicker: 'Privacy-first cycle tracking.',
+    kicker: 'A private cycle and wellbeing companion.',
     description:
       'An offline-first wellbeing app: data stays on the device in SQLite, with biometric lock, optional sync, reminders, localization and RevenueCat subscriptions.',
     role: 'Independent product',
@@ -172,7 +176,7 @@ export const products: Product[] = [
   },
   {
     name: 'PennyTots',
-    kicker: 'A community app for African professional networks.',
+    kicker: 'A real-time community app.',
     description:
       'A React Native community app with real-time chat, profiles, following, push notifications, deep links and payments. I hardened unread state, pagination, group messaging and helpdesk notifications.',
     role: 'Mobile & full-stack developer, 2023 →',
@@ -185,9 +189,9 @@ export const products: Product[] = [
     kicker: 'Multi-store commerce.',
     description:
       'Product discovery, deals, multi-store carts, checkout, delivery estimates, vendor onboarding and real-time order operations.',
-    role: 'Full-stack',
+    role: 'Marketplace build',
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Redis'],
-    status: 'Private build · no public URL',
+    status: 'No public URL',
   },
 ]
 
@@ -200,11 +204,11 @@ export const leetcode = {
     ['Hash table', 126],
     ['Dynamic programming', 85],
     ['Depth-first search', 80],
+    ['Math', 66],
     ['Trees', 64],
     ['Breadth-first search', 60],
     ['Greedy', 56],
     ['Binary search', 45],
-    ['Backtracking', 26],
   ] as [string, number][],
   // Monthly daily-challenge badges earned in 2022 (May missed).
   monthlyBadges: [true, true, true, true, false, true, true, true, true, true, true, true],
@@ -216,4 +220,14 @@ export const nav = [
   { href: '#career', label: 'Career' },
   { href: '#products', label: 'Products' },
   { href: '#discipline', label: 'Discipline' },
+  { href: '#contact', label: 'Contact' },
 ]
+
+// Weighted scores out of 10 from docs/council/r*-*.md. R0 scored the old live site.
+export const council = {
+  models: ['Codex (GPT)', 'Gemini', 'Claude Opus'],
+  rounds: [
+    { label: 'R0 · old site', scores: ['6.30', null, null] },
+    { label: 'R1 · first rebuild', scores: ['7.40', '7.90', '7.98'] },
+  ] as { label: string; scores: (string | null)[] }[],
+}

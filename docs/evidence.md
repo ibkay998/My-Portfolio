@@ -1,7 +1,9 @@
 # Evidence dossier — Ibukunoluwa Oyeniyi
 
 Source of truth for every claim on the portfolio. Every public claim must trace to a line here.
-Sources: CV (Sep 2026), Mercor profile, LinkedIn, LeetCode public API (pulled 2026-11-07), GitHub.
+Sources: CV (Sep 2026), Mercor profile, LinkedIn, LeetCode public API (pulled 2026-11-07), GitHub, and the
+previous version of this portfolio (copy written by Ibukunoluwa, Aug 2026).
+LeetCode daily granularity: src/data/leetcode-2022.json is the raw public submissionCalendar for 2022.
 
 ## Constraints
 - Babban Gona (employer): NO product screenshots, no internal code, no customer data. Naming
@@ -21,7 +23,8 @@ Sources: CV (Sep 2026), Mercor profile, LinkedIn, LeetCode public API (pulled 20
 - Associate Developer Aug 2023 – Jun 2025
 - Developer I Feb 2025 – Jul 2025
 - Developer II Jul 2025 – present
-- Developer of the Year, in second year at the company.
+- Developer of the Year, in second year at the company, "for delivery impact, engineering quality, and consistent
+  ownership across critical products" (Mercor profile wording).
 - Frontend team lead: leads ~5 engineers; 3 years of leadership responsibility.
 
 ## Babban Gona — what was built (nameable, no screenshots)
@@ -45,9 +48,12 @@ Sources: CV (Sep 2026), Mercor profile, LinkedIn, LeetCode public API (pulled 20
 
 ## AfterQuery Experts — Software Engineering & AI Evaluation Expert (contract, 2026–present)
 Designs work that tests the frontier of what coding agents can reliably do.
-- Project Gold (repository task design): authored 14 codebase tasks in a documented delivery cycle; 3 approved and
+- Project Gold (repository task design): designed production-shaped coding tasks from real repository histories, built
+  test contracts, used model trajectories to improve fairness and signal quality (previous portfolio, user-authored).
+  Authored 14 codebase tasks in a documented delivery cycle; 3 approved and
   11 advanced to human review with ZERO rejections in the cycle.
-- Project Pluto (benchmark authoring): advanced 18 task packages to Ready for Review — deterministic integration
+- Project Pluto (benchmark authoring): authored and calibrated terminal-agent engineering tasks across multiple
+  languages, pairing realistic bugs with deterministic validation (previous portfolio, user-authored). Advanced 18 task packages to Ready for Review — deterministic integration
   suites, NOP/oracle separation, fair specifications, calibrated multi-model difficulty probes. Langs: Python, Rust, Java.
 - Project Fenrir (systems security): discovered, reproduced and repaired memory-safety vulnerabilities using
   sanitizer-backed fuzzing inputs; 3 approved paid findings, incl. a cross-call heap-use-after-free in Rust archive pipelines.
@@ -61,8 +67,8 @@ Designs work that tests the frontier of what coding agents can reliably do.
 - PennyTots — https://pennytots.com (LIVE site). Mobile & full-stack developer, Jun 2023–present. React Native community
   app: real-time chat, profiles, following, push notifications, deep links, payments. Hardened unread state, pagination,
   group messaging, helpdesk notifications. React Native, Expo, Node.js/NestJS, GraphQL/REST, MongoDB, Socket.IO, AWS.
-- Wholeflo — https://wholeflo.com (landing page live, pre-launch with waitlist as of 2026-11-07). Independent product. Offline-first
-  wellbeing app: React Native, Expo Router, SQLite, secure local data, optional sync, notifications, localization,
+- Wholeflo — https://wholeflo.com (landing page live, pre-launch with waitlist as of 2026-11-07). Independent product. "A cycle and wellbeing
+  companion" (previous portfolio); site title "WholeFlo - Period Tracker App". Offline-first wellbeing app: React Native, Expo Router, SQLite, secure local data, optional sync, notifications, localization,
   biometric protection, RevenueCat subscriptions.
 - Quikaar — marketplace (discovery, deals, multi-store carts, checkout, delivery estimates, vendor onboarding,
   real-time orders). Next.js, TypeScript, PostgreSQL, Redis. No public URL found.

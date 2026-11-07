@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Ibukunoluwa Oyeniyi: I make software prove itself. 13.7 s to 45.5 ms, 0 rejections, Developer of the Year.'
+export const alt = 'Ibukunoluwa Oyeniyi: I make software prove itself. 13.7 s to 45.5 ms median latency, 0 rejections in an AI-evaluation review cycle, Developer of the Year.'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -40,8 +40,8 @@ export default async function OpengraphImage() {
             <span>&nbsp;itself.</span>
           </div>
           <div style={{ display: 'flex', gap: 28, borderTop: '2px solid #11130f', paddingTop: 20 }}>
-            {proof('13.7 s → 45.5 ms', 'median latency')}
-            {proof('0 rejections', 'AI-agent tasks')}
+            {proof('13.7 s → 45.5 ms', 'median, 20k-record benchmark')}
+            {proof('0 rejections', '14 AI-eval tasks, one cycle')}
             {proof('Dev of the Year', 'Babban Gona')}
           </div>
         </div>

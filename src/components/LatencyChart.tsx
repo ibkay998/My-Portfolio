@@ -3,7 +3,7 @@ const AFTER_S = 0.0455
 const MIN_LOG = -2 // 10 ms
 const MAX_LOG = 2 // 100 s
 const W = 640
-const LEFT = 84
+const LEFT = 112
 const RIGHT = 24
 const plot = W - LEFT - RIGHT
 
@@ -49,14 +49,15 @@ export default function LatencyChart() {
 
         <text x={W - RIGHT} y={102} textAnchor="end" className="latency__speedup">≈{speedup}× faster</text>
 
-        <text x={0} y={186} className="latency__label">Linear</text>
+        <text x={W - RIGHT} y={10} textAnchor="end" className="latency__note">Logarithmic scale</text>
+        <text x={0} y={186} className="latency__label">To scale</text>
         <rect x={LEFT} y={174} height={14} width={plot} className="latency__bar latency__bar--before latency__bar--thin" />
         <rect x={LEFT} y={196} height={14} width={linearAfter} className="latency__bar latency__bar--after latency__bar--thin" />
         <text x={LEFT + 10} y={208} className="latency__note">← the new request, drawn to scale</text>
       </svg>
       <figcaption className="receipt">
-        Median request latency in a controlled 20,000-record benchmark. Fix: pagination plus query and index
-        optimization, done with backend engineers. Source: CV and Mercor profile.
+        Controlled 20,000-record benchmark, median request latency, measured before and after. Work done with
+        backend engineers. Source: CV and Mercor profile.
       </figcaption>
     </figure>
   )

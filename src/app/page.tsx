@@ -5,6 +5,7 @@ import Ledger from '@/components/Ledger'
 import {
   aiPractice,
   careerSteps,
+  council,
   engineeringFacts,
   exportSteps,
   failureBoundary,
@@ -24,9 +25,10 @@ export default function Home() {
       <a className="skip-link" href="#main">Skip to content</a>
 
       <header className="nav">
-        <a href="#top" className="nav__brand" aria-label="Ibukunoluwa Oyeniyi, back to top">
+        <a href="#top" className="nav__brand">
           <span className="nav__mark" aria-hidden="true">IO</span>
           <span className="nav__name">Ibukunoluwa Oyeniyi</span>
+          <span className="sr-only">, back to top</span>
         </a>
         <nav aria-label="Sections" className="nav__links">
           {nav.map((item) => (
@@ -41,7 +43,7 @@ export default function Home() {
         <section id="top" className="hero shell">
           <div className="hero__copy">
             <p className="eyebrow">
-              Developer II &amp; frontend lead, Babban Gona · AI evaluation expert, AfterQuery · Lagos, Nigeria
+              Developer II &amp; frontend lead, Babban Gona<span className="eyebrow__long"> · AI evaluation expert, AfterQuery</span> · Lagos
             </p>
             <h1>
               I make software <em>prove</em> itself.
@@ -94,10 +96,12 @@ export default function Home() {
             <div className="evidence__text">
               <p className="kicker">Babban Gona · Program Config Service</p>
               <h3>A 13.7-second request, made about 300× faster.</h3>
-              <p>
-                A core configuration endpoint slowed to a crawl at scale. I traced it to inefficient aggregation and
-                poor index usage, then worked with the backend engineers on pagination and query optimization.
-              </p>
+              <dl className="case">
+                <div><dt>Context</dt><dd>Program Config Service, part of the AgricOS platform used by 10,000+ people.</dd></div>
+                <div><dt>Diagnosis</dt><dd>I identified inefficient aggregation and missed opportunities to use indexes.</dd></div>
+                <div><dt>Fix</dt><dd>Pagination and query optimization, worked through with the backend engineers.</dd></div>
+                <div><dt>Validation</dt><dd>A controlled 20,000-record benchmark, comparing median latency before and after.</dd></div>
+              </dl>
             </div>
             <LatencyChart />
           </article>
@@ -106,10 +110,11 @@ export default function Home() {
             <div className="evidence__text">
               <p className="kicker">Babban Gona · Export service</p>
               <h3>Designed and shipped a full export service in under a week.</h3>
-              <p>
-                Frontend to database: large exports run as background jobs that survive failures, stream
-                CSV instead of building it in memory, and respect each tenant’s permissions.
-              </p>
+              <dl className="case">
+                <div><dt>Constraint</dt><dd>Designed and delivered in under one week.</dd></div>
+                <div><dt>Scope</dt><dd>End to end, from frontend integration to private downloads (diagram).</dd></div>
+                <div><dt>Safety</dt><dd>Tenant-scoped permissions on every export and every download.</dd></div>
+              </dl>
             </div>
             <figure className="flow">
               <ol className="flow__steps">
@@ -145,7 +150,7 @@ export default function Home() {
               <p className="kicker">02 · AI</p>
               <h2 id="ai-title">AI is how I work, and what I test.</h2>
               <p className="section__lede">
-                Lots of engineers use AI. Fewer get paid to find where it breaks. I do both, and both show up below.
+                I use AI every day to build, and I get paid to design the tasks that measure where it breaks.
               </p>
             </div>
 
@@ -181,6 +186,31 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+
+            <details className="scorecard" open>
+              <summary>
+                <span className="kicker">Council scorecard</span>
+                <strong>How three models scored this portfolio, round by round</strong>
+              </summary>
+              <table>
+                <caption className="sr-only">Scores out of 10 from each model, by review round</caption>
+                <thead>
+                  <tr><th scope="col">Round</th>{council.models.map((m) => <th key={m} scope="col">{m}</th>)}</tr>
+                </thead>
+                <tbody>
+                  {council.rounds.map((r) => (
+                    <tr key={r.label}>
+                      <th scope="row">{r.label}</th>
+                      {r.scores.map((score, i) => <td key={i}>{score ?? '—'}</td>)}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <p className="receipt">
+                Same seven-criterion rubric each round, written by the Codex reviewer in round 0. Full critiques:{' '}
+                <a href={links.council}>docs/council</a>.
+              </p>
+            </details>
           </div>
         </section>
 
@@ -190,8 +220,8 @@ export default function Home() {
             <p className="kicker">03 · Career</p>
             <h2 id="career-title">From civil engineering to Developer of the Year.</h2>
             <p className="section__lede">
-              I didn’t start in software. I earned my way in through practice, then got promoted three times in two
-              and a half years.
+              I didn’t start in software. I joined Babban Gona as an intern in January 2023 and was Developer II by July
+              2025.
             </p>
           </div>
           <ol className="stairs">
@@ -217,7 +247,7 @@ export default function Home() {
         <section id="products" className="section shell" aria-labelledby="products-title">
           <div className="section__head">
             <p className="kicker">04 · Products</p>
-            <h2 id="products-title">Products I’ve built and shipped myself.</h2>
+            <h2 id="products-title">Products I’ve founded or helped build.</h2>
           </div>
           <div className="products">
             {products.map((p) => (
@@ -257,8 +287,8 @@ export default function Home() {
               <p className="kicker">05 · Discipline</p>
               <h2 id="discipline-title">346 days of practice in a single year.</h2>
               <p className="section__lede">
-                In 2022, while working as a civil engineer, I solved algorithm problems on 346 of 365 days. That habit
-                is how I switched careers.
+                In 2022, the year I worked as a civil engineer and moved into software, I submitted LeetCode solutions on
+                346 of 365 days.
               </p>
             </div>
             <div className="discipline">
@@ -316,7 +346,7 @@ export default function Home() {
 
       <footer className="footer shell">
         <p>
-          Every number on this page traces to a <a href={links.evidence}>public evidence file</a>. Built with Next.js.{' '}
+          Numbers on this page come from a <a href={links.evidence}>public evidence file</a>. Built with Next.js.{' '}
           <a href={links.repo}>Source</a>.
         </p>
       </footer>
