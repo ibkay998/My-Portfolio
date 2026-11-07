@@ -231,5 +231,6 @@ export const council = {
   rounds: [
     { label: 'R0 · old site', scores: ['6.30', null, null] },
     { label: 'R1 · first rebuild', scores: ['7.40', '7.90', '7.98'] },
+    { label: 'R2', scores: ['8.23', '8.63', '8.53'] },
   ] as { label: string; scores: (string | null)[] }[],
 }
